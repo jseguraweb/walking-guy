@@ -16,7 +16,6 @@ const walkAnimation = 'walk 1.2s steps(8) infinite';
 
 // background elements
 const river = document.querySelector('.river');
-const city = document.querySelector('.city')
 const guy = document.querySelector('.guy');
 
 const sky = document.querySelector('.sky');
