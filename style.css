@@ -63,35 +63,44 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
     top: 0;
-    opacity: 0.9;
 }
 
 .streetlights {
-    width: 50%;
+    width: 100%;
     height: 327px;
     position: absolute;
-    bottom: -0.3rem;
+    bottom: -0.5rem;
     left: 0;
-    background-image: url('./assets/streetlights.png');
+    background-image: url('./assets/streetlights-2.png');
     background-size: contain;
     background-repeat: repeat-x;
-    animation: move-streetlights 30s linear infinite;
+    animation: movebg 30s linear infinite;
     z-index: 6;
+    border: 5px solid red;
 }
 
 .fences {
     width: 100%;
-    height: 12vh;
+    height: 80px;
     position: absolute;
-    bottom: -1.3rem;
+    bottom: 0rem;
     left: 0;
-    background-image: url('./assets/fence2.png');
+    background-image: url('./assets/fence3.png');
     background-size: contain;
     background-repeat: repeat-x;
     animation: movebg 30s linear infinite;
     z-index: 5;
+    border-bottom: 5px solid rgb(20, 9, 0);
+}
+
+.fences::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.253);
 }
 
 .path {
@@ -122,9 +131,8 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.4);
     top: 0;
-    opacity: 0.4;
 }
 
 .guy {
@@ -156,9 +164,8 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
-    opacity: 0.8;
 }
 
 .bush {
@@ -177,7 +184,7 @@ body {
 
 /* keyframes */
 
-@keyframes walk {
+/* @keyframes walk {
   0% { background-position:0 }
   100% { background-position:-1332px }
 }
@@ -187,12 +194,7 @@ body {
   100% { background-position: -1500px}
 }
 
-@keyframes move-streetlights {
-  0% { background-position:0px } 
-  100% { background-position: -1500px}
-}
-
 @keyframes move-sea {
   0% { background-position:0px } 
   100% { background-position: -1500px 50px}
-}
+} */
