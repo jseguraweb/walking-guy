@@ -19,7 +19,7 @@ body {
     background-image: url('./assets/sky.jpg');
     background-size: cover;
     background-repeat: repeat-x;
-    animation: movebg 450s linear infinite;
+    animation: none;
 }
 
 .city {
@@ -33,6 +33,7 @@ body {
     left: 25%;
     display: flex;
     align-items: flex-end;
+    animation: none;
 }
 
 .city::after {
@@ -54,7 +55,7 @@ body {
     background-size: cover;
     background-repeat: repeat-x;
     position: relative;
-    animation: move-sea 140s linear infinite;
+    animation: none;
 }
 
 .river::after {
@@ -63,7 +64,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
 }
 
@@ -74,7 +75,7 @@ body {
     background-size: contain;
     background-repeat: repeat;
     position: relative;
-    animation: movebg 30s linear infinite;
+    animation: none;
 }
 
 .path::after {
@@ -95,7 +96,7 @@ body {
     background-image: url('./assets/fences-streetlight.png');
     background-size: contain;
     background-repeat: repeat-x;
-    animation: movebg 30s linear infinite;
+    animation: none;
     z-index: 5;
     border-bottom: 5px solid rgb(20, 9, 0);
 }
@@ -109,19 +110,19 @@ body {
     top: -13rem;
     left: 40%;
     z-index: 10;
-    animation: walk 1.2s steps(8) infinite;
+    animation: none;
 }
 
 .streetlights-front {
     width: 1000%;
     height: 380px;
     position: absolute;
-    top: -335px;
+    top: -330px;
     left: -60%;
     background-image: url('./assets/front-streetlight.png');
     background-size: contain;
     background-repeat: repeat-x;
-    animation: movebg 30s linear infinite;
+    animation: none;
     z-index: 15;
 }
 
@@ -132,7 +133,7 @@ body {
     background-size: contain;
     background-repeat: repeat;
     position: relative;
-    animation: movebg 30s linear infinite;
+    animation: none;
 }
 
 .grass::after {
@@ -154,10 +155,50 @@ body {
     background-image: url('./assets/bush2.png');
     background-size: cover;
     background-repeat: repeat;
-    animation: movebg 50s linear infinite;
+    animation: none;
     z-index: 4;
 }
 
+.second-bush {
+    width: 150%;
+    bottom: -5rem;
+    left: -15rem;
+}
+
+.music {
+    position: absolute;
+    background-color: rgba(255, 235, 205, 0.6);
+    width: auto;
+    padding: 0.5rem;
+    top: 15px;
+    left: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#volume-button {
+    cursor: pointer;
+}
+
+#play-button {
+    margin: 0 0.5rem;
+}
+
+#x,
+#waves {
+    display: none;
+}
 
 /* keyframes */
 
@@ -174,4 +215,9 @@ body {
 @keyframes move-sea {
   0% { background-position:0px } 
   100% { background-position: -1500px 50px}
+}
+
+@keyframes move-city {
+  0% { background-position:0px } 
+  100% { background-position: -1500px}
 }
