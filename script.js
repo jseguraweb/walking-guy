@@ -13,10 +13,12 @@ const skyAnimation = 'movebg 500s linear infinite';
 const cityAnimation = 'movebg 350s linear infinite';
 const seaAnimation = 'move-sea 140s linear infinite';
 const walkAnimation = 'walk 1.2s steps(8) infinite';
+const shadowAnimation = 'shadow 15s infinite ease-out';
 
 // background elements
 const river = document.querySelector('.river');
 const guy = document.querySelector('.guy');
+const shadow = document.querySelector('.shadow');
 
 const sky = document.querySelector('.sky');
 const path = document.querySelector('.path');
@@ -43,6 +45,7 @@ const play = () => {
     sky.style.animation = skyAnimation;
     guy.style.animation = walkAnimation;
     river.style.animation = seaAnimation;
+    shadow.style.animation = shadowAnimation;
 };
 
 const stop = () => {
@@ -55,6 +58,7 @@ const stop = () => {
     sky.style.animation = 'none';
     guy.style.animation = 'none';
     river.style.animation = 'none';
+    shadow.style.animation = 'none';
 };
 
 const muted = () => {
