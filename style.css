@@ -78,7 +78,6 @@ body {
     background-repeat: repeat-x;
     animation: movebg 30s linear infinite;
     z-index: 6;
-    border: 5px solid red;
 }
 
 .fences {
