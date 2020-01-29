@@ -184,7 +184,7 @@ body {
 
 /* keyframes */
 
-/* @keyframes walk {
+@keyframes walk {
   0% { background-position:0 }
   100% { background-position:-1332px }
 }
@@ -197,4 +197,4 @@ body {
 @keyframes move-sea {
   0% { background-position:0px } 
   100% { background-position: -1500px 50px}
-} */
+}
