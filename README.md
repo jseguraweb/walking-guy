@@ -1,4 +1,4 @@
-# <a href="https://jseguraweb.github.io/calculator/">The walking guy</a>
+# <a href="https://jseguraweb.github.io/walking-guy/">The walking guy</a>
 
 > CSS-Art Project: create the illusion of a character walking with pure CSS
 
